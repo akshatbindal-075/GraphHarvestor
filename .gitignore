@@ -1,0 +1,56 @@
+# GraphHarvester .gitignore
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+.env
+credentials/*.json
+credentials/token.json
+!credentials/.gitignore
+
+# ── Raw scraped data & logs (large, fully regenerable) ────────────────────────
+raw/
+logs/
+*.log
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Python bytecode & packaging ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Playwright browser binaries (large, reinstalled via playwright install) ────
+# Uncomment if you want to exclude the cached browsers too:
+# %USERPROFILE%\AppData\Local\ms-playwright/
+
+# ── Test & coverage artefacts ─────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Jupyter (if used for exploration) ────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb

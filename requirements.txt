@@ -1,0 +1,45 @@
+# ── Web Scraping ──────────────────────────────────────────────────────────────
+aiohttp>=3.9.0              # async HTTP client (all API scrapers)
+requests>=2.31.0            # sync HTTP (utils / one-off calls)
+httpx>=0.27.0               # sync HTTP alternative
+beautifulsoup4>=4.12.0      # HTML parsing
+lxml>=5.2.0                 # fast XML/HTML parser (ArXiv Atom feed)
+playwright>=1.44.0          # headless Chromium for JS-heavy / anti-bot sources
+
+# ── LLM / AI ─────────────────────────────────────────────────────────────────
+litellm>=1.40.0             # multi-provider LLM client (Gemini, Groq, OpenRouter, DeepSeek)
+openai>=1.30.0              # used as OpenRouter client (OpenAI-compatible API)
+groq>=0.11.0                # Groq SDK
+tiktoken>=0.7.0             # token counting / budget
+
+# ── Google ────────────────────────────────────────────────────────────────────
+gspread>=6.0.0              # Google Sheets API client
+google-auth>=2.29.0         # Google auth base
+google-auth-oauthlib>=1.2.0 # OAuth 2.0 flow (InstalledAppFlow)
+
+# ── Graph & Knowledge Graph ───────────────────────────────────────────────────
+networkx>=3.3               # in-memory graph analysis
+neo4j>=5.20.0               # Neo4j driver (optional, for graph DB output)
+rdflib>=7.0.0               # RDF / knowledge graphs
+
+# ── Data Processing ───────────────────────────────────────────────────────────
+pandas>=2.2.0
+numpy>=1.26.0
+pydantic>=2.7.0             # data validation
+pydantic-settings>=2.2.0    # .env -> typed Settings
+
+# ── Entity Resolution / NLP ──────────────────────────────────────────────────
+rapidfuzz>=3.9.0            # fuzzy string matching (entity resolver)
+dateparser>=1.2.0           # date normalization: "2 hours ago" -> ISO-8601
+recordlinkage>=0.16.0       # record deduplication utilities
+
+# ── Pipeline / Workflow ───────────────────────────────────────────────────────
+tenacity>=8.3.0             # retry with exponential backoff + jitter (429s only)
+tqdm>=4.66.0                # progress bars
+python-dotenv>=1.0.0        # .env config loading
+loguru>=0.7.0               # structured logging
+
+# ── Output / Serialisation ────────────────────────────────────────────────────
+rich>=13.7.0                # pretty terminal output
+orjson>=3.10.0              # fast JSON serialisation
+pyarrow>=16.0.0             # Parquet / Arrow output
