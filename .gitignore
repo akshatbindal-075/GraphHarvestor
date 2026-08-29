@@ -11,6 +11,7 @@ raw/
 logs/
 *.log
 VIDEO_SCRIPT.md
+video_script.pdf
 
 # ── Virtual environment ───────────────────────────────────────────────────────
 .venv/
