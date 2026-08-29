@@ -10,6 +10,7 @@ credentials/token.json
 raw/
 logs/
 *.log
+VIDEO_SCRIPT.md
 
 # ── Virtual environment ───────────────────────────────────────────────────────
 .venv/
